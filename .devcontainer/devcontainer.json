@@ -3,12 +3,24 @@
   "image": "mcr.microsoft.com/devcontainers/python:3.13",
 
   "features": {
+    "ghcr.io/va-h/devcontainers-features/uv:1": {
+      "shellAutocompletion": true
+    },
+    "ghcr.io/devcontainers-contrib/features/just:1": {},
     "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
       "version": "1.6.39"
     },
     "ghcr.io/devcontainers/features/node:1": {
       "version": "lts"
     }
+  },
+
+  "containerEnv": {
+    "UV_LINK_MODE": "copy",
+    "UV_PROJECT_ENVIRONMENT": "${containerWorkspaceFolder}/.venv",
+    "UV_COMPILE_BYTECODE": "1",
+    "PYTHONUNBUFFERED": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
   },
 
   "customizations": {
@@ -64,7 +76,7 @@
   },
 
   "postCreateCommand": "bash .devcontainer/postCreate.sh",
-  "postStartCommand": "sleep 2",
+  "postStartCommand": "bash .devcontainer/postStart.sh",
 
   "forwardPorts": [4200],
   "portsAttributes": {

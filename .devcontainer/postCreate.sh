@@ -4,24 +4,7 @@ set -e
 
 echo "Setting up development environment..."
 
-# Install uv if not present
-if ! command -v uv &> /dev/null; then
-    echo "Installing uv..."
-    curl -LsSf https://astral.sh/uv/install.sh | sh
-    export PATH="$HOME/.cargo/bin:$PATH"
-fi
-
-# Install Just command runner
-if ! command -v just &> /dev/null; then
-    echo "Installing Just..."
-    curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to /usr/local/bin
-fi
-
-# Create virtual environment explicitly in project directory
-echo "Creating virtual environment..."
-uv venv .venv
-
-# Sync Python dependencies
+# Sync Python dependencies (UV creates .venv automatically)
 echo "Installing Python dependencies..."
 uv sync --locked
 
