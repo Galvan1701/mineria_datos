@@ -10,6 +10,7 @@ book:
     collapse-level: 1
   chapters:
     - index.qmd
+    - 1_ecosistema.md
   open-graph: true
 
 bibliography: references.bib

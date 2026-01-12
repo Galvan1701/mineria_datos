@@ -1,10 +1,59 @@
 # Temario {.unnumbered}
 
-1. Fundamentos y Proceso
-1.1 El Ecosistema de Datos
-1.2 Metodología CRISP-DM
+## I. Fundamentos y Proceso
 
-### Evaluación {.unnumbered}
+### El Ecosistema de Datos
+Motivación: DM vs. ML vs. IA. El valor económico de los datos. Ética y privacidad.
+
+### Metodología CRISP-DM
+Ciclo de vida del proyecto. Definición de objetivos de negocio y traducción a objetivos de minería.
+
+### Comprensión de Datos (EDA)
+Estadísticos descriptivos vs. inferenciales. Visualización para la toma de decisiones. Detección de "Datos Sucios".
+
+### Preparación e Ingeniería
+Limpieza de datos. Ingeniería de Características (RFM). Codificación de variables categóricas. El costo de la mala calidad de datos.
+
+## II. Evaluación de modelos
+
+### Métricas de Clasificación
+La Paradoja de la Exactitud. Precisión, Recall, F1. *Trade-offs* operativos.
+
+### Métricas de Regresión
+R cuadrada, MAE, MAPE, ejemplos.
+
+### Evaluación Financiera I
+**La Matriz de Confusión como Estado Financiero.** Costos de FP y FN. Valor Esperado.
+
+### Evaluación Financiera II
+**Curvas de *Lift*, *Gain* y *Profit*.** Análisis de Deciles. Optimización de umbrales para maximizar utilidad.
+
+## III. Modelado Predictivo
+
+### Árboles y Reglas
+Árboles de Decisión (CART). Interpretabilidad visual. Reglas de negocio derivadas.
+
+### Ensambles I - Bagging
+Random Forests. Reducción de varianza. Importancia de Variables para estrategia.
+
+### Ensambles II - Boosting
+**Gradient Boosting (XGBoost).** Intuición de corrección de errores. *Tuning* básico. Evitar la derivación profunda, enfocar en aplicación.
+
+### Interpretabilidad (XAI)
+**SHAP y LIME.** Explicando la "Caja Negra" a los *stakeholders* y reguladores.
+
+## IV. Detección de Patrones
+
+### Reglas de Asociación
+**Análisis de Cesta de Mercado.** Algoritmo Apriori. Estrategias de *Cross-selling* en Retail.
+
+### Clustering (Segmentación)
+K-Means y Jerárquico. Definición de "Personas" y perfiles de clientes. Marketing segmentado.
+
+### Detección de Anomalías
+**Isolation Forests.** Detección de Fraude y Riesgos Operativos. Gestión de alertas.
+
+# Evaluación {.unnumbered}
 
 - Tareas (15%)
 - Quizes (25%)
@@ -18,7 +67,7 @@ Existirá una parte extra a los alumnos que contribuyan al aprendizaje de sus co
 - Contribuciones al repositorio: añadiendo redacción más entendible, añadiendo ejemplos particulares a sus carreras, etc.
 - Actividad en el canal de Slack: contestando dudas de sus compañeros, iniciando discusiones para resolver problemas. 
 
-### Profesor
+# Profesor
 
 **Nombre**: Saúl Caballero Ramírez
 
@@ -26,7 +75,7 @@ Existirá una parte extra a los alumnos que contribuyan al aprendizaje de sus co
 
 **Correo alternativo**: saul@nixtla.io
 
-### Referencias principales {.unnumbered}
+### Referencias aprendizaje de máquina principales {.unnumbered}
 
-- [An Introduction to Statistical Learning](https://www.statlearning.com/), @ISL 
-- [The Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/), @ESL 
+- @ISL 
+- @ESL 
