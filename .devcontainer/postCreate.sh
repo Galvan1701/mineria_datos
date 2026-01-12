@@ -4,6 +4,12 @@ set -e
 
 echo "Setting up development environment..."
 
+# Install Just command runner (one-time installation)
+if ! command -v just &> /dev/null; then
+    echo "Installing Just..."
+    curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to /usr/local/bin
+fi
+
 # Sync Python dependencies (UV creates .venv automatically)
 echo "Installing Python dependencies..."
 uv sync --locked
