@@ -11,7 +11,8 @@
     },
     "ghcr.io/devcontainers/features/node:1": {
       "version": "lts"
-    }
+    },
+    "ghcr.io/pirpedro/features/just:latest": {}
   },
 
   "customizations": {
