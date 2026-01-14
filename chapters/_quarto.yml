@@ -12,6 +12,7 @@ book:
     - index.qmd
     - 0_computacion.md
     - 1_ecosistema.md
+    - 2_crisp.md
   open-graph: true
 
 bibliography: references.bib
